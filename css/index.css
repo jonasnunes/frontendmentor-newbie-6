@@ -7,6 +7,83 @@
 
 body {
   background-color: hsl(0deg, 0%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 5rem;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  line-height: 180%;
+}
+
+a {
+  background-color: #fff;
+  padding: 1.5rem;
+  width: 150px;
+  height: 50px;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9rem;
+  transition: 0.7s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.container {
+  width: 350px;
+}
+.container-card1 {
+  background-color: hsl(31deg, 77%, 52%);
+  border-radius: 1rem 1rem 0 0;
+}
+.container-card1-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
+}
+.container-card1-section a {
+  color: hsl(31deg, 77%, 52%);
+}
+.container-card2 {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.container-card2-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
+}
+.container-card2-section a {
+  color: hsl(184deg, 100%, 22%);
+}
+.container-card3 {
+  background-color: hsl(179deg, 100%, 13%);
+  border-radius: 0 0 1rem 1rem;
+}
+.container-card3-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
+}
+.container-card3-section a {
+  color: hsl(179deg, 100%, 13%);
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -9,3 +9,63 @@
 
 body
     background-color: variables.$very-light-gray
+    @include mixins.flex-center
+
+h1
+    font-family: variables.$font-big-shoulders
+    text-transform: uppercase
+    font-size: 2.2rem
+    color: #fff
+
+p
+    font-family: variables.$font-lexend
+    color: variables.$color-paragraph
+    line-height: 180%
+
+a
+    background-color: #fff
+    padding: 1.5rem
+    width: 150px
+    height: 50px
+    border-radius: 2rem
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: variables.$font-lexend
+    font-size: .9rem
+    transition: .7s
+
+a:hover 
+    opacity: .8
+
+.container
+    width: 350px
+
+    &-card1 
+        background-color: variables.$bright-orange
+        border-radius: 1rem 1rem 0 0
+
+        &-section
+            @include mixins.card-flex
+
+            a
+                color: variables.$bright-orange
+
+    &-card2 
+        background-color: variables.$dark-cyan
+
+        &-section
+            @include mixins.card-flex
+
+            a
+                color: variables.$dark-cyan
+    
+    &-card3 
+        background-color: variables.$very-dark-cyan
+        border-radius: 0 0 1rem 1rem
+
+        &-section
+            @include mixins.card-flex
+
+            a
+                color: variables.$very-dark-cyan
