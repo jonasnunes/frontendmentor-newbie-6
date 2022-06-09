@@ -47,9 +47,31 @@ a:hover {
 .container {
   width: 350px;
 }
+@media (min-width: 1050px) {
+  .container {
+    width: 1050px;
+    display: flex;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    width: 100%;
+  }
+}
 .container-card1 {
   background-color: hsl(31deg, 77%, 52%);
   border-radius: 1rem 1rem 0 0;
+}
+@media (min-width: 1050px) {
+  .container-card1 {
+    width: 350px;
+    border-radius: 1rem 0 0 1rem;
+  }
+}
+@media (max-width: 375px) {
+  .container-card1 {
+    border-radius: 0;
+  }
 }
 .container-card1-section {
   display: flex;
@@ -63,6 +85,11 @@ a:hover {
 .container-card2 {
   background-color: hsl(184deg, 100%, 22%);
 }
+@media (min-width: 1050px) {
+  .container-card2 {
+    width: 350px;
+  }
+}
 .container-card2-section {
   display: flex;
   flex-direction: column;
@@ -75,6 +102,17 @@ a:hover {
 .container-card3 {
   background-color: hsl(179deg, 100%, 13%);
   border-radius: 0 0 1rem 1rem;
+}
+@media (min-width: 1050px) {
+  .container-card3 {
+    width: 350px;
+    border-radius: 0 1rem 1rem 0;
+  }
+}
+@media (max-width: 375px) {
+  .container-card3 {
+    border-radius: 0;
+  }
 }
 .container-card3-section {
   display: flex;

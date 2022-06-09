@@ -41,9 +41,23 @@ a:hover
 .container
     width: 350px
 
+    @include mixins.responsivo 
+        width: 1050px
+        display: flex
+    
+    @include mixins.tela-pequena
+        width: 100%
+
     &-card1 
         background-color: variables.$bright-orange
         border-radius: 1rem 1rem 0 0
+
+        @include mixins.responsivo 
+            width: 350px
+            border-radius: 1rem 0 0 1rem
+        
+        @include mixins.tela-pequena
+            border-radius: 0
 
         &-section
             @include mixins.card-flex
@@ -54,6 +68,9 @@ a:hover
     &-card2 
         background-color: variables.$dark-cyan
 
+        @include mixins.responsivo 
+            width: 350px
+
         &-section
             @include mixins.card-flex
 
@@ -63,6 +80,13 @@ a:hover
     &-card3 
         background-color: variables.$very-dark-cyan
         border-radius: 0 0 1rem 1rem
+
+        @include mixins.responsivo 
+            width: 350px
+            border-radius: 0 1rem 1rem 0
+        
+        @include mixins.tela-pequena
+            border-radius: 0
 
         &-section
             @include mixins.card-flex

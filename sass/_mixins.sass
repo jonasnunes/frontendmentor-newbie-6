@@ -9,3 +9,11 @@
     flex-direction: column
     gap: 2rem
     padding: 3rem
+
+@mixin responsivo
+    @media(min-width: 1050px)
+        @content
+
+@mixin tela-pequena 
+    @media(max-width: 375px)
+        @content
